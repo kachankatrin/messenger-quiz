@@ -1,6 +1,7 @@
 @import './left-bar.scss';
+@import './top-bar.scss';
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +14,7 @@ html {
 
 body {
     font-size: 1.3rem;
-    margin: 0;
-    max-width: 144rem;
+    width: 102.4rem;
     font-family: 'Roboto-Regular';
     color: #252F48;
     li {

@@ -33,7 +33,7 @@
   justify-content: space-between;
   position: fixed;
   left: 8rem;
-  width: calc(100% - 8rem);
+  width: calc(102.4rem - 8rem);
   padding: 2.5rem 4rem 1.8rem;
   border-bottom: 1px solid #DAE4F2;
   background: #FFFFFF; }
@@ -56,9 +56,6 @@
     .top-bar .user p {
       margin: 0 0.7rem 0 0.9rem; }
 
-.main {
-  background: #F9FAFC; }
-
 * {
   margin: 0;
   padding: 0;
@@ -69,8 +66,7 @@ html {
 
 body {
   font-size: 1.3rem;
-  margin: 0;
-  max-width: 144rem;
+  width: 102.4rem;
   font-family: 'Roboto-Regular';
   color: #252F48; }
   body li {
