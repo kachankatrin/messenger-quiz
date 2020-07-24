@@ -8,6 +8,7 @@
   padding: 2.5rem 4rem 1.8rem;
   border-bottom: 1px solid #DAE4F2;
   background: #FFFFFF;
+  z-index: 90;
   .bread-crumbs {
     width: 31rem;
     ul {
@@ -15,7 +16,7 @@
       display: flex;
       justify-content: space-between;
       li {
-        //   position: relative;
+        cursor: pointer;
         &:last-child {
             position: relative;
             .vector {
@@ -33,6 +34,8 @@
       align-items: center;
       p {
         margin: 0 0.7rem 0 0.9rem;
+        font-size: 1.4rem;
       }
+      cursor: pointer;
   }
 }

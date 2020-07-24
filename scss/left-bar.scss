@@ -18,6 +18,9 @@
         position: relative;
         width: 100%;
         text-align: center;
+        &:hover {
+          cursor: pointer;
+        }
       .dout-group {
         position: absolute;
         top: -50%;

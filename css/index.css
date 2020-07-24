@@ -17,6 +17,8 @@
       position: relative;
       width: 100%;
       text-align: center; }
+      .left-bar .icons div:hover {
+        cursor: pointer; }
       .left-bar .icons div .dout-group {
         position: absolute;
         top: -50%;
@@ -36,25 +38,107 @@
   width: calc(102.4rem - 8rem);
   padding: 2.5rem 4rem 1.8rem;
   border-bottom: 1px solid #DAE4F2;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  z-index: 90; }
   .top-bar .bread-crumbs {
     width: 31rem; }
     .top-bar .bread-crumbs ul {
       width: 37%;
       display: flex;
       justify-content: space-between; }
-      .top-bar .bread-crumbs ul li:last-child {
-        position: relative; }
-        .top-bar .bread-crumbs ul li:last-child .vector {
-          position: absolute;
-          left: -1.2rem;
-          top: 50%;
-          transform: translateY(-50%); }
+      .top-bar .bread-crumbs ul li {
+        cursor: pointer; }
+        .top-bar .bread-crumbs ul li:last-child {
+          position: relative; }
+          .top-bar .bread-crumbs ul li:last-child .vector {
+            position: absolute;
+            left: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%); }
   .top-bar .user {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
     .top-bar .user p {
-      margin: 0 0.7rem 0 0.9rem; }
+      margin: 0 0.7rem 0 0.9rem;
+      font-size: 1.4rem; }
+
+.main {
+  background: #f9fafc;
+  height: 100%; }
+  .main .messenger {
+    position: absolute;
+    width: 85.4rem;
+    display: flex;
+    flex-flow: row;
+    top: 10.5rem;
+    left: 12.4rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+    border-radius: 4px; }
+    .main .messenger .messages-list {
+      display: flex;
+      flex-flow: column;
+      overflow-y: scroll;
+      flex: 6; }
+      .main .messenger .messages-list li {
+        height: 9rem;
+        position: relative;
+        padding: 2rem 0;
+        cursor: pointer; }
+        .main .messenger .messages-list li:active {
+          transform: scale(0.9);
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9); }
+        .main .messenger .messages-list li .flex-container {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center; }
+          .main .messenger .messages-list li .flex-container div div {
+            position: relative;
+            width: fit-content;
+            width: -moz-fit-content; }
+            .main .messenger .messages-list li .flex-container div div h3 {
+              width: fit-content;
+              width: -moz-fit-content;
+              font-family: "Exo 2";
+              font-size: 1.6rem;
+              line-height: 1.9rem;
+              letter-spacing: 0.571429px;
+              color: #01134e; }
+            .main .messenger .messages-list li .flex-container div div .online {
+              position: absolute;
+              top: -15%;
+              right: -5%;
+              transform: translate(50%, 50%); }
+            .main .messenger .messages-list li .flex-container div div .mute {
+              position: absolute;
+              top: 20%;
+              right: -20%; }
+          .main .messenger .messages-list li .flex-container div p {
+            font-family: "Roboto-Regular";
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: #252f48;
+            opacity: 0.43; }
+        .main .messenger .messages-list li .time {
+          position: absolute;
+          top: 1.3rem;
+          right: 1.2rem;
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+          letter-spacing: 0.428571px;
+          color: #9ba0ad; }
+      .main .messenger .messages-list .unread {
+        background: #f7f9fc; }
+      .main .messenger .messages-list .selected {
+        box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2), 0px -5px 5px rgba(224, 224, 224, 0.15);
+        background: #ffffff; }
+    .main .messenger .inbox {
+      border-left: 1px solid #edf0f4;
+      flex: 11; }
 
 * {
   margin: 0;
@@ -67,11 +151,16 @@ html {
 body {
   font-size: 1.3rem;
   width: 102.4rem;
-  font-family: 'Roboto-Regular';
-  color: #252F48; }
+  height: 76rem;
+  font-family: "Roboto-Regular";
+  color: #252f48; }
   body li {
     list-style: none; }
 
 @font-face {
   font-family: Roboto-Regular;
   src: url("../public/fonts/roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: Exo 2;
+  src: url("../public/fonts/OFT/Exo2.0-Regular.otf"); }
