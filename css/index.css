@@ -1,0 +1,81 @@
+.left-bar {
+  position: fixed;
+  width: 8rem;
+  height: 100vh;
+  background-color: #01134e; }
+  .left-bar .logo {
+    margin-top: 1.8rem;
+    margin-left: 2.3rem; }
+  .left-bar .icons {
+    margin-top: 7rem;
+    height: 30rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center; }
+    .left-bar .icons div {
+      position: relative;
+      width: 100%;
+      text-align: center; }
+      .left-bar .icons div .dout-group {
+        position: absolute;
+        top: -50%;
+        right: 25%;
+        transform: translate(0%, 25%); }
+      .left-bar .icons div .rectangle {
+        position: absolute;
+        top: -55%;
+        left: 0%; }
+
+.top-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 8rem;
+  width: calc(100% - 8rem);
+  padding: 2.5rem 4rem 1.8rem;
+  border-bottom: 1px solid #DAE4F2;
+  background: #FFFFFF; }
+  .top-bar .bread-crumbs {
+    width: 31rem; }
+    .top-bar .bread-crumbs ul {
+      width: 37%;
+      display: flex;
+      justify-content: space-between; }
+      .top-bar .bread-crumbs ul li:last-child {
+        position: relative; }
+        .top-bar .bread-crumbs ul li:last-child .vector {
+          position: absolute;
+          left: -1.2rem;
+          top: 50%;
+          transform: translateY(-50%); }
+  .top-bar .user {
+    display: flex;
+    align-items: center; }
+    .top-bar .user p {
+      margin: 0 0.7rem 0 0.9rem; }
+
+.main {
+  background: #F9FAFC; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.3rem;
+  margin: 0;
+  max-width: 144rem;
+  font-family: 'Roboto-Regular';
+  color: #252F48; }
+  body li {
+    list-style: none; }
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../public/fonts/roboto/Roboto-Regular.ttf"); }

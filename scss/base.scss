@@ -1,0 +1,29 @@
+@import './left-bar.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.3rem;
+    margin: 0;
+    max-width: 144rem;
+    font-family: 'Roboto-Regular';
+    color: #252F48;
+    li {
+        list-style: none;
+    }
+
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../public/fonts/roboto/Roboto-Regular.ttf");
+}
