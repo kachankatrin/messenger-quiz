@@ -6,8 +6,8 @@
   left: 8rem;
   width: calc(102.4rem - 8rem);
   padding: 2.5rem 4rem 1.8rem;
-  border-bottom: 1px solid #DAE4F2;
-  background: #FFFFFF;
+  border-bottom: 1px solid #dae4f2;
+  background: #ffffff;
   z-index: 90;
   .bread-crumbs {
     width: 31rem;
@@ -18,24 +18,24 @@
       li {
         cursor: pointer;
         &:last-child {
-            position: relative;
-            .vector {
-                position: absolute;
-                left: -1.2rem;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+          position: relative;
+          .vector {
+            position: absolute;
+            left: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
       }
     }
   }
   .user {
-      display: flex;
-      align-items: center;
-      p {
-        margin: 0 0.7rem 0 0.9rem;
-        font-size: 1.4rem;
-      }
-      cursor: pointer;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0 0.7rem 0 0.9rem;
+      font-size: 1.4rem;
+    }
+    cursor: pointer;
   }
 }

@@ -1,0 +1,72 @@
+.inbox {
+  border-left: 1px solid #edf0f4;
+  flex: 11;
+  .searchfield {
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      transform: translate(50%, -50%);
+    }
+    input[type="search"] {
+      border: none;
+      border-bottom: 1px solid #f5f6f9;
+      padding-left: 4.6rem;
+      height: 4.7rem;
+      width: 100%;
+      &::placeholder {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        color: #252f48;
+        opacity: 0.2;
+      }
+    }
+  }
+  .chat {
+    padding: 0rem 3rem 0rem 2rem;
+    max-height: 44.7rem;
+    overflow-y: scroll;
+    .current-date {
+      font-family: "Exo 2";
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      letter-spacing: 0.5px;
+      color: #caced9;
+      text-align: center;
+      margin-bottom: 9rem;
+    }
+    .message-container {
+      // display: flex;
+      // flex-flow: column;
+
+      display: grid;
+      // flex-flow: column;
+      // grid: ;
+      grid-template-columns: min-content auto;
+      grid-template-rows: minmax(50px, auto);
+      grid-gap: 3vmin;
+      grid-auto-columns: max-content;
+      img {
+        align-self: center;
+      }
+      .inbox-message {
+        width: 30rem;
+        background: #f7f9fc;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #222428;
+        padding: 1.2rem 1.4rem;
+        margin-bottom: 2rem;
+      }
+      .reciever {
+        // align-self: end;
+        grid-column-start: 3;
+      }
+    }
+    .sender {
+      // align-self: start;
+    }
+  }
+}
