@@ -11,7 +11,9 @@
       <img class="logo" src="./public/images/logo.svg" />
       <div class="icons">
         <div>
-          <img src="./public/images/icons/icon-3.svg" alt="calendar" />
+          <button>
+            <img src="./public/images/icons/icon-3.svg" alt="calendar" />
+          </button>
           <img
             class="dout-group"
             src="./public/images/icons/Group.svg"
@@ -19,29 +21,37 @@
           />
         </div>
         <div>
-          <img src="./public/images/icons/my-profile.svg" alt="my-profile" />
+          <button>
+            <img src="./public/images/icons/my-profile.svg" alt="my-profile" />
+          </button>
         </div>
         <div>
-          <img
-            src="./public/images/icons/handyman-tools.svg"
-            alt="handyman-tools"
-          />
+          <button>
+            <img
+              src="./public/images/icons/handyman-tools.svg"
+              alt="handyman-tools"
+            />
+          </button>
         </div>
         <div>
-          <img src="./public/images/icons/team-2.svg" alt="team-2" />
+          <button>
+            <img src="./public/images/icons/team-2.svg" alt="team-2" />
+          </button>
         </div>
         <div>
           <img class="rectangle" src="./public/images/icons/Rectangle 17.svg" />
-          <img src="./public/images/icons/messages.svg" alt="messages" />
+          <button><img src="./public/images/icons/messages.svg" alt="messages" /></button>
         </div>
       </div>
     </nav>
     <div class="top-bar">
       <nav class="bread-crumbs">
         <ul>
-          <li>Home</li>
+          <li><a>Home</a></li>
           <li>
-            <img class="vector" src="./public/images/icons/Vector.svg" />Network
+            <img class="vector" src="./public/images/icons/Vector.svg" /><a
+              >Network</a
+            >
           </li>
         </ul>
       </nav>
@@ -139,8 +149,12 @@
           <ul class="chat">
             <p class="current-date">Today, 17.03.2018</p>
             <li class="message-container">
-                <img src="./public/images/avatar/Oval3.svg"/>
+              <img src="./public/images/avatar/Oval3.svg" />
               <div class="inbox-message sender">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-left.svg"
+                />
                 <p>
                   On the other hand, we denounce with righteous indignation!
                 </p>
@@ -149,13 +163,21 @@
             </li>
             <li class="message-container">
               <div class="inbox-message reciever">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-right.svg"
+                />
                 <p>Which is the same as saying?</p>
                 <p></p>
               </div>
             </li>
             <li class="message-container">
-                <img src="./public/images/avatar/Oval3.svg"/>
+              <img src="./public/images/avatar/Oval3.svg" />
               <div class="inbox-message sender">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-left.svg"
+                />
                 <p>
                   But in certain circumstances and owing to the claims of duty
                   or the obligations of business it will frequently occur that
@@ -165,13 +187,52 @@
               </div>
             </li>
             <li class="message-container">
-              <div class="inbox-message reciever"> 
+              <div class="inbox-message reciever">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-right.svg"
+                />
+                <p>To take a trivial example, which of us ever undertakes)</p>
+                <p class="time"></p>
+              </div>
+            </li>
+            <!-- more messages -->
+            <li class="message-container">
+              <img src="./public/images/avatar/Oval3.svg" />
+              <div class="inbox-message sender">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-left.svg"
+                />
+                <p>
+                  But in certain circumstances and owing to the claims of duty
+                  or the obligations of business it will frequently occur that
+                  pleasures
+                </p>
+                <p></p>
+              </div>
+            </li>
+            <li class="message-container">
+              <div class="inbox-message reciever">
+                <img
+                  class="message-tail"
+                  src="./public/images/icons/Vector-right.svg"
+                />
                 <p>To take a trivial example, which of us ever undertakes)</p>
                 <p class="time"></p>
               </div>
             </li>
           </ul>
-          <textarea>Write a message…</textarea>
+          <div>
+            <textarea>Write a message…</textarea>
+            <div class="buttons-textarea">
+              <button><img src="./public/images/icons/Smile.svg" /></button>
+              <button><img src="./public/images/icons/Clip.svg" /></button>
+              <button>
+                <img src="./public/images/icons/send-message-button-1.svg" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

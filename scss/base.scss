@@ -21,6 +21,12 @@ body {
   li {
     list-style: none;
   }
+  button {
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+  }
 }
 
 @font-face {
