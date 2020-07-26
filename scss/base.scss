@@ -1,0 +1,70 @@
+@import "./left-bar.scss";
+@import "./top-bar.scss";
+@import "./main.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.3rem;
+  max-width: 102.4rem;
+  height: 76rem;
+  font-family: "Roboto-Regular";
+  color: #252f48;
+  li {
+    list-style: none;
+  }
+  button {
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+  }
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../public/fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Exo 2;
+  src: url("../public/fonts/OFT/Exo2.0-Regular.otf");
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  body {
+    max-width: 127.9rem;
+    .top-bar {
+      width: calc(100% - 8rem);
+    }
+    .main {
+      .messenger {
+        top: 20%;
+        left: 17%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1443px) {
+  body {
+    max-width: 144.3rem;
+    .top-bar {
+      width: calc(100% - 8rem);
+    }
+    .main {
+      .messenger {
+        top: 22%;
+        left: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.inbox {
+  border-left: 1px solid #edf0f4;
+  flex: 11;
+  .searchfield {
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      transform: translate(50%, -50%);
+    }
+    input[type="search"] {
+      border: none;
+      border-bottom: 1px solid #f5f6f9;
+      padding-left: 4.6rem;
+      height: 4.7rem;
+      width: 100%;
+      &::placeholder {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        color: #252f48;
+        opacity: 0.2;
+      }
+    }
+  }
+  .chat {
+    padding: 0rem 3rem 0rem 2rem;
+    max-height: 44.7rem;
+    overflow-y: scroll;
+    .current-date {
+      font-family: "Exo 2";
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      letter-spacing: 0.5px;
+      color: #caced9;
+      text-align: center;
+      margin-bottom: 9rem;
+      margin-top: 1rem;
+    }
+    .message-container {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: minmax(50px, auto);
+      grid-gap: 3vmin;
+      grid-auto-columns: max-content;
+      img {
+        align-self: center;
+      }
+      .inbox-message {
+        width: 30rem;
+        background: #f7f9fc;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #222428;
+        padding: 1.2rem 1.4rem;
+        margin-bottom: 2rem;
+      }
+      .reciever {
+        grid-column-start: 3;
+        position: relative;
+        .message-tail {
+          position: absolute;
+          bottom: -0.12rem;
+          right: -1.38rem;
+        }
+      }
+      .sender {
+        position: relative;
+        .message-tail {
+          position: absolute;
+          bottom: -0.12rem;
+          left: -1.38rem;
+        }
+      }
+    }
+  }
+  div {
+    position: relative;
+    textarea {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0px 0px 20px rgba(153, 163, 174, 0.146541);
+      border: none;
+      resize: none;
+      font-size: 1.4rem;
+      line-height: 1.1rem;
+      letter-spacing: 0.5px;
+      color: #252f48;
+      opacity: 0.2;
+      padding: 2.1rem 2rem 1.8rem 3.1rem;
+    }
+    .buttons-textarea {
+      position: absolute;
+      top: 1.3rem;
+      right: 2rem;
+      width: 12.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        &:last-child {
+          background: #ffffff;
+          box-shadow: 0px 0px 15px rgba(153, 163, 174, 0.259256);
+          border-radius: 7px;
+          padding: 7.8px 9px 8.4px 7px;
+        }
+      }
+    }
+  }
+}
